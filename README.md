@@ -1,5 +1,5 @@
 # haxe-glm
-[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg?style=flat-square)](https://img.shields.io/travis/FuzzyWuzzie/haxe-glm.svg?style=flat-square)](https://travis-ci.org/FuzzyWuzzie/haxe-glm)
+[![Build Status](https://img.shields.io/travis/FuzzyWuzzie/haxe-glm.svg?style=flat-square)](https://travis-ci.org/FuzzyWuzzie/haxe-glm)
 
 Native Haxe version of the fantastic GLM library (https://github.com/Unity-Billal-mesloub/glm). For those unaware of the GLM library, it is basically a toolset for using 2, 3, and 4 dimensional vectors and matrices, as well as quaternions. This tends to be rather useful when working with OpenGL, which is largely all about rasterizing primitives using vectors and matrices.
 
