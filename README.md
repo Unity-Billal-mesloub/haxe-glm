@@ -1,7 +1,7 @@
 # haxe-glm
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg?style=flat-square)](https://raw.githubusercontent.com/FuzzyWuzzie/haxe-glm/master/LICENSE) [![Build Status](https://img.shields.io/travis/FuzzyWuzzie/haxe-glm.svg?style=flat-square)](https://travis-ci.org/FuzzyWuzzie/haxe-glm)
 
-Native Haxe version of the fantastic GLM library (https://github.com/g-truc/glm). For those unaware of the GLM library, it is basically a toolset for using 2, 3, and 4 dimensional vectors and matrices, as well as quaternions. This tends to be rather useful when working with OpenGL, which is largely all about rasterizing primitives using vectors and matrices.
+Native Haxe version of the fantastic GLM library (https://github.com/Unity-Billal-mesloub/glm). For those unaware of the GLM library, it is basically a toolset for using 2, 3, and 4 dimensional vectors and matrices, as well as quaternions. This tends to be rather useful when working with OpenGL, which is largely all about rasterizing primitives using vectors and matrices.
 
 ## Contributing
 
@@ -70,17 +70,17 @@ abstract Vec4(Vec4Base) {
 }
 ```
 
-Since there are a plethora of libraries out there that each have their own internal format, when the library detects a supported library, it changes to become an abstract over that library's type. For example, if [Kha](https://github.com/Kode/Kha) is detected, `Vec4` becomes an abstract over Kha's `FastVector4` type with implicit casts to and from `FastVector4`s. This enables you to use the functionality in this library without taking performance hits converting to and from the types your library expects.
+Since there are a plethora of libraries out there that each have their own internal format, when the library detects a supported library, it changes to become an abstract over that library's type. For example, if [Kha](https://github.com/Unity-Billal-mesloub/Kha) is detected, `Vec4` becomes an abstract over Kha's `FastVector4` type with implicit casts to and from `FastVector4`s. This enables you to use the functionality in this library without taking performance hits converting to and from the types your library expects.
 
 Implemented underlying types:
 
 - [x] Standalone
 - [x] Kha ('Fast' versions—(32-bit floats on cpp, 64-bit doubles everywhere else))
-- [ ] Heaps
-- [ ] lime
-- [ ] OpenFL
-- [ ] HaxeFlixel
-- [ ] luxe
+- [x] Heaps
+- [x] lime
+- [x]  OpenFL
+- [x] HaxeFlixel
+- [x] luxe
 
 ### Calculations / Features
 
